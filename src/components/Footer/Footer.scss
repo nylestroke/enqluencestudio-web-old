@@ -1,0 +1,96 @@
+@import '../../shared/scss/config';
+
+footer {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(50% 100% at 50% 10%, hsla(0deg, 0%, 100%, 0.045) 0, hsla(0deg, 0%, 100%, 0) 100%);
+  background-color: rgb(2, 5, 17);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1.5em 2em;
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 260px;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+
+    a {
+      transition: 0.2s transform;
+      color: $accent;
+
+      .css-i4bv87-MuiSvgIcon-root {
+         font-size: 1.7em;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        color: #fff;
+      }
+    }
+  }
+
+  .information {
+    display: flex;
+    gap: 1.5em;
+    padding-top: 0.5em;
+
+    a {
+      font-size: 1.05em;
+      color: #fff;
+      transition: 0.3s color;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    padding-top: 1.3em;
+
+    h3 {
+      font-weight: 400;
+      font-size: 1em;
+      span {
+        color: rgba($accent, 0.9);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    .information {
+      font-size: 0.9em;
+    }
+    .copyright {
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    text-align: center;
+    .information {
+      font-size: 0.72em;
+    }
+  }
+}

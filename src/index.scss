@@ -1,0 +1,29 @@
+@import './assets/fonts/fonts';
+@import './shared/scss/config';
+@import './shared/scss/cursor';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden!important;
+  overflow-y: scroll;
+  min-height: 100%;
+  display: block;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden!important;
+  font-family: $userfont, $systemfont;
+  line-height: $lineheight;
+  //background: $background;
+  font-size: 18px;
+  min-height: 100%;
+  font-weight: 400;
+  color: #fff;
+  background: #020205 url('./assets/img/stars2.png') repeat fixed center center;
+}

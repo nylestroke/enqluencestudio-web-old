@@ -1,0 +1,64 @@
+.planet {
+  margin: 3em 0px;
+}
+.planet .background{
+  box-shadow: 3px 3px 3px;
+  animation: translateBackground 40s infinite linear;
+  background:url('./sprites/mars.jpg') repeat-x;
+  width:300px;
+  height:300px;
+  position:absolute;
+  border-radius:50%;
+}
+.planet .clouds{
+  background:url('./sprites/clouds.png') repeat-x;
+  width:300px;
+  height:300px;
+  position:absolute;
+  border-radius:50%;
+  animation: translateBackground 30s infinite linear;
+  opacity: 0.4;
+}
+.planet .wrap{
+  box-shadow: 3px 3px 3px;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  animation: rotatePlanet 150s infinite linear;
+
+  //&:before {
+  //  content: '';
+  //  width: 2px;
+  //  height: 400px;
+  //  top: -50px;
+  //  left: 50%;
+  //  position: absolute;
+  //  background: rgba(238, 238, 238, 0.19);
+  //  z-index: -1;
+  //}
+}
+@keyframes translateBackground{
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:-600px;
+  }
+}
+@keyframes rotatePlanet{
+  0%{
+    transform:rotateZ(0);
+  }
+  100%{
+    transform:rotateZ(-360deg);
+  }
+}
+
+/**
+    <div className="planet">
+        <div className="wrap">
+            <div className="background"></div>
+            <div className="clouds"></div>
+        </div>
+    </div>
+ */
