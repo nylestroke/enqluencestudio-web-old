@@ -4,6 +4,7 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 import PublicIcon from "@mui/icons-material/Public";
+import "./Contact.scss";
 
 const Contact = () => {
 	const [state, handleSubmit] = useForm("xbjbyvqk");
